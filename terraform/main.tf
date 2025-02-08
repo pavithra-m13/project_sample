@@ -1,6 +1,6 @@
 provider "local" {}
 
-resource "null_resource" "install_iis" {
+resource "null_resource" "install_iis " {
   provisioner "local-exec" {
     command = "powershell.exe Install-WindowsFeature -Name Web-Server -IncludeManagementTools"
   }
